@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.half_screen {
+  min-width: 640px;
+}
+.position {
+  display: flex;
+  flex-direction: row;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,5 +42,15 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: '640px') {
+  .half_screen{
+    min-width: 100%;
+  }
+  .position {
+    display: flex;
+    flex-direction: column;
   }
 }
